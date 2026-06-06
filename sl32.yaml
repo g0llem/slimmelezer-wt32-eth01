@@ -109,9 +109,13 @@ sensor:
     power_delivered:
       name: "Power Consumed"
       accuracy_decimals: 3
+      filters:
+        - throttle_average: 30s
     power_returned:
       name: "Power Produced"
       accuracy_decimals: 3
+      filters:
+        - throttle_average: 30s
     electricity_failures:
       name: "Electricity Failures"
       icon: mdi:alert
